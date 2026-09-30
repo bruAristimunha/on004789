@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Delayed Free Recall of Word Lists",
-  "description": "This dataset contains intracranial EEG recordings and behavioral event data from patients performing a delayed free recall task, in which participants studied word lists, engaged in an arithmetic distractor task, and freely recalled words. Data were collected across multiple clinical sites in collaboration with the Computational Memory Lab at the University of Pennsylvania, providing electrode localization and referencing information suitable for memory and epilepsy research.",
-  "methods_description": "Participants studied lists of words presented visually one at a time, then completed arithmetic distractor problems, followed by free recall of the words in any order. Intracranial EEG was recorded using monopolar and bipolar referencing schemes across multiple recording systems, with voltage values standardized to microvolts. Electrode locations were annotated with MNI and Talairach coordinates and brain region labels when available.",
+  "description": "This dataset contains behavioral events and intracranial EEG recordings from a delayed free recall task in which participants studied visually presented word lists, solved arithmetic distractor problems, and then freely recalled the words. Data were collected at multiple clinical sites in collaboration with the Computational Memory Lab at the University of Pennsylvania. Monopolar and bipolar recordings are provided with subject-specific electrode montages, MNI/Talairach coordinates, and brain region annotations.",
+  "methods_description": "Participants viewed word lists one at a time, completed simple arithmetic problems as a distractor, then freely recalled the words in any order. Intracranial recordings were acquired on multiple systems and rescaled so all voltages are in volts. Monopolar recordings are referenced (typically to a mastoid) and should be re-referenced before analysis, while bipolar recordings follow a paired scheme.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,26 +12,28 @@
   },
   "keywords": [
     {
-      "term": "iEEG"
-    },
-    {
-      "term": "intracranial electrodes"
+      "term": "intracranial EEG"
     },
     {
       "term": "free recall"
     },
     {
-      "term": "Memory",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
+      "term": "episodic memory"
     },
     {
-      "term": "Epilepsy",
+      "term": "Verbal Learning",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014706"
     },
     {
-      "term": "electrode localization"
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "Mental Recall",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D011939"
     }
   ],
   "related_identifiers": [
@@ -78,7 +80,7 @@
     "ieeg"
   ],
   "sizes": [
-    "618.7 GB (989 files)"
+    "576 GB (989 files)"
   ],
   "formats": [
     ".edf",
